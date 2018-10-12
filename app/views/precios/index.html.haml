@@ -1,0 +1,19 @@
+%h1 All Precios
+
+%table#movies
+  %thead
+    %tr
+      %th id
+      %th id_link
+      %th precio
+      %th More fecha
+  %tbody
+    - @precios.each do |drug|
+      %tr
+        %td= drug.id 
+        %td= drug.id_link
+        %td= drug.precio
+        %td= drug.fecha
+        
+-# add to end of index.html.haml
+-#= link_to 'Add new movie', new_movie_path
