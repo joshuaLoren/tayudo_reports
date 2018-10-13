@@ -6,7 +6,9 @@ Rails.application.routes.draw do
     
 #   root 'welcome#index'
 #   
-    get 'precios/index'
+    resources :reports
     resources :precios
-    root 'precios#index'
+    resources :general
+    get 'reports/index'
+    root 'reports#index'
 end

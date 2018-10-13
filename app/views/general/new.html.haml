@@ -1,0 +1,15 @@
+%h1 Base Report
+
+%table#general
+  %thead
+    %tr
+      %th Droguerías
+      %th Seguimiento 
+  %tbody
+    - @general.each do |general|
+      %tr
+        %td= general.id 
+        %td= general.valor
+        
+-# add to end of index.html.haml
+= link_to 'Return to Reports Homepage', reports_path
