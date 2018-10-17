@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181013204813) do
+ActiveRecord::Schema.define(version: 1) do
 
   create_table "admin", force: :cascade do |t|
     t.string "user",     limit: 50, null: false
@@ -35,8 +35,7 @@ ActiveRecord::Schema.define(version: 20181013204813) do
   end
 
   create_table "generals", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string "valor", limit: 200, null: false
   end
 
   create_table "links", force: :cascade do |t|
