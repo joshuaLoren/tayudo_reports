@@ -1,6 +1,11 @@
 source 'https://rubygems.org'
 
-
+# use dotenv to store publish and secret key in environment variables
+# list before stripe Gem
+gem 'dotenv-rails', require: 'dotenv/rails-now', groups: [:development, :test]
+# Add stripe for payment
+gem "stripe"
+#some pages uses haml
 gem "haml"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.10'
