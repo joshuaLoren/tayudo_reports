@@ -1,5 +1,11 @@
 source 'https://rubygems.org'
 
+
+# Use ActiveModel has_secure_password
+gem ‘bcrypt’
+
+gem erb
+
 gem "haml"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.10'
