@@ -8,7 +8,19 @@
 #
 # And be sure to use new-style password hashing:
 #   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
-#
+# for heroku config
+# userename: 
+# password
+# hostname
+# port: 3306
+# /database
+# TEMPLATE
+# heroku config:add DATABASE_URL=mysql2://etok:somepassword@<your-server>:3306/etok
+# heroku config:add SHARED_DATABASE_URL=mysql2://etok:somepassword@79.101.41.213:3306/etok
+
+# heroku config:add DATABASE_URL=mysql2://yoteayu1_joshua:Kings2me1!@174.136.37.115:3306/yoteayu1_development
+# heroku config:add SHARED_DATABASE_URL=mysql2://yoteayu1_joshua:Kings2me1!@174.136.37.115:3306/yoteayu1_development
+
 default: &default
   adapter: mysql2
   encoding: utf8
