@@ -62,3 +62,4 @@ production:
   database: yoteayu1_production
   username: yoteayu1_joshua
   password: <%= ENV['Kings2me1!'] %>
+  #url: <%= ENV['DATABASE_URL'] %>
