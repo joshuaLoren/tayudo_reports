@@ -1,8 +1,6 @@
 source 'https://rubygems.org'
 
-# use dotenv to store publish and secret key in environment variables
-# list before stripe Gem
-gem 'dotenv-rails', require: 'dotenv/rails-now', groups: [:development, :test]
+gem "figaro"
 # Add stripe for payment
 gem "stripe"
 #some pages uses haml
